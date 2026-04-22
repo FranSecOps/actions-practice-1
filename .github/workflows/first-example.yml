@@ -4,6 +4,14 @@ on: push
 
 jobs:
     first_job:
-        runs_on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
-        -  name: 
+        - name: Welcome message
+          run: echo "My first Github Actions Job"
+        
+        - name: list files
+          run: ls
+        
+        - name: Read file
+          run: cat README.md
+
